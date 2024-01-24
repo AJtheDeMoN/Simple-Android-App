@@ -1,4 +1,4 @@
-**Simple Login Page Android App - IIT Ropar**
+**Simple Login Page Android App**
 
 Welcome to the Simple Login Page Android App for IIT Ropar students! This app allows you to log in using your institute email ID or sign up if you're a new user. Once logged in, you can also edit your profile data.
 
@@ -15,18 +15,32 @@ Welcome to the Simple Login Page Android App for IIT Ropar students! This app al
      npm install
      ```
 
-3. **Run Backend:**
+3. **Update Email and Password (Backend):**
+   - Open the `backend/util.js` file in a text editor.
+   - Locate the following lines:
+
+     ```javascript
+     // Update these credentials with your IIT Ropar email ID and password
+     const instituteEmail = "your_email@iitrpr.ac.in";
+     const institutePassword = "your_password";
+     ```
+
+   - Replace `"your_email@iitrpr.ac.in"` with your actual IIT Ropar institute email ID.
+   - Replace `"your_password"` with your actual institute email password.
+   - Save the changes.
+
+4. **Run Backend:**
    - Start the backend server first.
    - Navigate to the `backend` directory.
    - Run the backend server using the following command:
 
      ```bash
-     npm run dev
+     npm start
      ```
 
    - Ensure the backend server is running and accessible.
 
-4. **Run Frontend:**
+5. **Run Frontend:**
    - Open a new terminal window and navigate to the `frontend` directory.
    - Run the frontend using the following command:
 
@@ -36,11 +50,11 @@ Welcome to the Simple Login Page Android App for IIT Ropar students! This app al
 
    - The app should launch on your default web browser.
 
-5. **Login or Signup:**
+6. **Login or Signup:**
    - Use your IIT Ropar institute email ID to log in.
    - If you're a new user, sign up to create your account.
 
-6. **Edit Profile Data:**
+7. **Edit Profile Data:**
    - Once logged in, you have the option to edit your profile data.
 
 ### Note:
