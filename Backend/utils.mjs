@@ -3,19 +3,19 @@ import fs from 'fs';
 
 // Mail Setup
 export const transporter = nodemailer.createTransport({
-    host: 'smtp.elasticemail.com',
+    host: 'enter host name',
     port: 2525,
     secure: false,
     auth: {
-        user: 'dep2024.t11@gmail.com',
-        pass: '5E5727E029B90F099E3430F8FE210723BD11'
+        user: 'your email',
+        pass: 'password'
     }
 });
 
 export const sendMail = (email, otp) => {
     return new Promise((resolve, reject) => {
         const mailOptions = {
-            from: 'dep2024.t11@gmail.com',
+            from: 'your email',
             to: email,
             subject: 'OTP for Verification',
             text: `Your OTP for verification is: ${otp}, valid for 10 minutes. Do not share it with anyone.`,
